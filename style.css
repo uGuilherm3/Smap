@@ -1,0 +1,560 @@
+@font-face {
+    font-family: "popinsb";
+    src: url(fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "popins";
+    src: url(fonts/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: "popinsi";
+    src: url(fonts/Poppins-Italic.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "popins";
+    color: #312C4A;
+    cursor: default;
+}
+main{
+    background-image: url(imgs/back.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+main .content{
+    margin-left: 10%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #ffff;
+}
+main span{
+    font-family: "popinsb";
+    color: #37E5D4;
+}
+main p span{
+    font-family: "popinsi";
+}
+main h1{
+    font-family: "popinsb";
+    font-size: 40px;
+    color: #ffff;
+}
+main p{
+    width: 33%;
+    font-family: "popinsi";
+    font-weight: 100;
+    font-size: 24px;
+    color: #ffff;
+}
+main a{
+    text-decoration: none;
+    font-family: "popinsb";
+    color: #07435B;
+    background: #37E5D4;
+    width: max-content;
+    padding: 10px 30px;
+    border-radius: 20px;
+    z-index: +1;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+main a:hover{
+    background-color: #fff;
+    color: #312C4A;
+}
+main img{
+    position: absolute;
+    object-fit: cover;
+    bottom: -10px;
+    width: 100%;
+}
+
+
+/*etapas*/
+.sec1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    text-align: center;
+    margin-top: 5%;
+    color: #312C4A;
+}
+.title p{
+    font-weight: 500;
+    font-size: min(24px,3vw);
+    margin-bottom: 15px;
+}
+.title h2{
+    font-family: "popinsb";
+    font-weight: 700;
+    font-size: min(40px,4.5vw);
+}
+.etapas{
+    display: flex;
+    margin-top: 6%;
+    gap: 35px;
+}
+.sec1 .content2 p{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 800;
+    width: 270px;
+    color: #312C4A;
+}
+
+
+/*etapas mobile*/
+.etapamob{
+    display: none;
+}
+
+
+/*beneficios*/
+.sec2{
+    margin-top: 10%;
+    padding-top: 1%;
+    background-color: #f5f5f5;
+}
+.sec2 .content{
+    display: flex;
+    justify-content: center;
+    gap: 96px;
+    margin-top: 50px;
+}
+.sec2 .content p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: min(24px,2vw);
+    line-height: 36px;
+    text-align: justify;
+    color: #312C4A;
+    width: 550px;
+}
+.sec2 .content span{
+    font-family: "popinsb";
+}
+
+
+/*pra quem é*/
+.sec3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec3 .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70vw;
+    gap: 50px;
+    margin-top: 4%;
+}
+.sec3 .content2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: min(300px,25vw);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px 30px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.sec3 .content2 img{
+    transform: translateY(80px);
+    transition: 0.4s ease;
+}
+.sec3 .content2 h3{
+    transform: translateY(100px);
+    transition: 0.3s ease;
+}
+.sec3 .content2 p{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+.sec3 .content2:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+.sec3 .content2:hover h3{
+    transform: translateY(0);
+}
+.sec3 .content2:hover img{
+    transform: translateY(0);
+}
+.sec3 .content2:hover{
+    transform: translateY(-5%);
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.1);
+}
+.sec3 .content2 h3{
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 18px;
+}
+.sec3 .content2 p{
+    font-weight: 400;
+    font-size: min(18px, 2vw);
+    line-height: 27px;
+    margin-top: 30px;
+}
+
+
+/*quem somos*/
+.sec4{
+    background-color: #f5f5f5;
+    padding-top: 1%;
+    margin-top: 4%;
+}
+.sec4 .content{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    gap: 40px;
+}
+.sec4 .content p{
+    width: 500px;
+    font-size: min(24px,2vw);
+    line-height: 36px;
+}
+.sec4 .content span{
+    font-family: "popinsb";
+}
+.sec4 img{
+    object-fit: cover;
+}
+
+
+/*parceiros*/
+.sec5 .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 30vh;
+    margin-bottom: 4%;
+}
+.navigation{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    gap: 18px;
+}
+.barra{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+.barra:hover{
+    background-color: #cfcfcf;
+}
+.sec5 .content2{
+    display: flex;
+    gap: 50px;
+    height: 150px;
+    width: 1080px;
+    overflow: hidden;
+}
+.slide{
+    transition: 0.5s ease;
+}
+.sec5 input{
+    display: none;
+}
+#slide1:checked ~ .s1{
+    margin-left: 10px;
+}
+#slide2:checked ~ .s1{
+    margin-left: -1080px;
+}
+#slide3:checked ~ .s1{
+    margin-left: -2170px;
+}
+
+
+/*formulario*/
+.sec6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 90vh;
+    margin-bottom: 4%;
+    background-image: url(imgs/back2.png);
+    background-repeat: no-repeat;
+    background-size: 40vw;
+    background-position: right;
+}
+.sec6::after{
+    position: absolute;
+    content: "";
+    height: 40%;
+    width: 1px;
+    background-color: #cccc;
+    transition: 0.5s ease;
+}
+.sec6:hover::after{
+    height: 60%;
+}
+.sec6 form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+}
+.sec6 .content2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 10%;
+}
+.sec6 .content p{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+.sec6 .content h2{
+    font-family: "popinsb";
+    font-size: 45px;
+    line-height: 60px;
+    text-align: center;
+}
+form input{
+    height: 50px;
+    padding-left: 30px;
+    border: rgba(0, 0, 0, 0.11) 1px solid;
+    border-radius: 50px;
+    font-size: 17px;
+    outline: none;
+}
+form input:hover{
+    box-shadow: 0px 0px 8px #34ACC4;
+    cursor: text;
+}
+form button{
+    height: 50px;
+    width: 135px;
+    border-radius: 50px;
+    border: none;
+    background-color: #37E5D4;
+    color: #ffff;
+    font-family: "popinsb";
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+form button:hover{
+    background-color: #ffff;
+    color: #37E5D4;
+    box-shadow: 0px 0px 8px #37E5D4;
+}
+.sec6 .content2 h3{
+    font-size: 40px;
+    font-family: "popinsb";
+    color: #ffff;
+    margin-top: 20%;
+}
+.sec6 .content2 img{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+}
+.icones{
+    margin-top: 22px;
+    margin-bottom: 50px;
+}
+.icones i{
+    font-size: 40px;
+    background-color: #ffff;
+    color: #37E5D4;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 15px;
+}
+.sec7{
+    display: none;
+}
+.finalizacao{
+    text-align: center;
+    font-family: "popinsb";
+    margin-bottom: 34px;
+}
+
+@media (max-width: 700px){
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    h1{
+        font-size: min(30px, 5vw) !important;
+    }
+    main .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+    main p{
+        font-size: min(20px, 6vw) !important;
+        width: 80%;
+    }
+    main a{
+        font-size: min(15px,5vw);
+    }
+    main img{
+        bottom: -3.3%;
+    }
+    .title h2{
+        font-size: min(27px, 7vw);
+    }
+    .title p{
+        font-size: min(20px, 6vw);
+    }
+    /*etapas*/
+    .sec1 .etapas{
+        display: none;
+    }
+    .sec1 .etapas p{
+        font-size: min(15px, 3vw);
+    }
+    .etapamob{
+        display: block;
+    }
+
+    /*beneficios*/
+    .sec2 .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .sec2 .content img{
+        width: 80vw;
+        object-fit: cover;
+    }
+    .sec2 .content p{
+        font-size: min(20px, 3vw);
+        padding: 20px;
+        width: 80%;
+    }
+    /*pra quem é*/
+    .sec3 .content{
+        width: 100%;
+        gap: 20px;
+    }
+    .sec3 .content2{
+        width: 180px;
+        height: 250px;
+    }
+    .sec3 img{
+        width: 30%;
+    }
+    /*quem somos*/
+    .sec4 .content{
+        flex-wrap: wrap-reverse;
+    }
+    .sec4 img{
+        width: 80vw;
+    }
+    .sec4 p{
+        font-size: min(20px,3vw) !important;
+        padding: 30px;
+    }
+    /*parceiros*/
+
+    
+    /*form*/
+    .sec6{
+        display: none;
+    }
+    .sec7{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sec7 form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 80vw;
+    }
+    .sec7 button{
+        text-align: center;
+    }
+}
+@media (max-width: 1400px) and (min-width: 700px){
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    main p{
+        width: 50%;
+        font-size: min(20px, 3vw);
+    }
+    main img{
+        bottom: -4vh;
+        height: 250px;
+    }
+    .sec1 .etapas{
+        display: none;
+    }
+    .sec1 .etapas p{
+        font-size: min(15px, 3vw);
+    }
+    .etapamob{
+        display: block;
+    }
+    .sec2 img{
+        width: 45vw;
+    }
+    .sec2 p{
+        width: 100%;
+        padding: 30px;
+    }
+    .sec4 img{
+        width: 45vw;
+    }
+    .sec4 p{
+        padding-left: 30px;
+    }
+    .sec5 img{
+        
+    }
+    .sec6{
+        display: none;
+    }
+    .sec7{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec7 form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .sec7 input{
+        width: 50vw;
+    }
+    .sec7 .icones i{
+        box-shadow:  20px 20px 60px #dfdfdf,
+             -20px -20px 60px #ffffff;
+             padding: 15px;
+    }
+}
