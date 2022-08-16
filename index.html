@@ -5,20 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="shortcut icon" href="imgs/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>S_MAP</title>
 </head>
 <body>
+
+    <!--<header>
+        <img src="imgs/logo.png">
+        <nav class="menu">
+            <a href="#a">como funciona</a>
+            <a href="#b">benefícios</a>
+            <a href="#c">publico</a>
+            <a href="#d">sobre</a>
+            <a href="#e">parceiros</a>
+            <a href="#f">registrar</a>
+        </nav>
+    </header>-->
+
+    <section class="drop">
+        <img src="imgs/logo.png">
+        <div>
+            <a href="#a">como funciona</a>
+            <a href="#b">benefícios</a>
+            <a href="#c">publico</a>
+            <a href="#d">sobre</a>
+            <a href="#e">parceiros</a>
+            <a href="#f">registrar</a>
+        </div>
+    </section>
 
     <main>
 
         <div class="content">
             <h1><span>Minimize</span> suas perdas,<br><span>Otimize</span> seus resultados,<br><span>Maximize</span> seus lucros.</h1>
             <p><span>Indentifique</span> oportunidades de <span>economia</span> com a <span>otimização</span> dos seus processos através das nossas soluções e <span>melhore seus resultados.</span></p>
-            <a href="">Quero Conhecer</a>
+
+            <a id="pc" href="#f">Quero Conhecer</a>
+            <a id="mob" href="#g">Quero Conhecer</a>
         </div>
+
         <img src="imgs/Vector.png">
 
     </main>
@@ -26,7 +54,7 @@
     <aside>
 
         <!--etapas-->
-        <section class="sec1">
+        <section id="a" class="sec1">
             <div class="title" data-aos="fade-up">
                 <p>Como funciona?</p>
                 <h2>Monitoramento em tempo real</h2>
@@ -52,31 +80,31 @@
         </section>
 
         <!--etapas mobile-->
-        <section class="etapamob" data-aos="fade-up">
+        <section id="a" class="etapamob">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="imgs/etapa1.png">
-                        <p>Os dados são coletados através de sensores</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="imgs/etapa2.png">
-                        <p>As informações são enviadas para a nuvem</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="imgs/etapa03.png">
-                        <p>O aplicativo recebe e processa os dados</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="imgs/etapa04.png">
-                        <p>Os relatórios são gerados em tempo real</p>
-                    </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/etapa1.png">
+                    <p>Os dados são coletados através de sensores</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/etapa2.png">
+                    <p>As informações são enviadas para a nuvem</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/etapa03.png">
+                    <p>O aplicativo recebe e processa os dados</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/etapa04.png">
+                    <p>Os relatórios são gerados em tempo real</p>
+                  </div>
                 </div>
               </div>
         </section>
 
         <!--beneficios-->
-        <section class="sec2">
+        <section id="b" class="sec2">
             <div class="title" data-aos="fade-up">
                 <p>Os benefícios</p>
                 <h2>Relatórios na palma da sua mão</h2>
@@ -88,7 +116,7 @@
         </section>
 
         <!--pra quem é-->
-        <section class="sec3">
+        <section id="c" class="sec3">
             <div class="title" data-aos="fade-up">
                 <p>Para quem é?</p>
                 <h2>Solução feita para você...</h2>
@@ -127,7 +155,7 @@
         </section>
 
         <!--quem somos-->
-        <section class="sec4">
+        <section id="d" class="sec4">
             <div class="title" data-aos="fade-up">
                 <p>Quem Somos</p>
                 <h2>Uma empresa que se importa...</h2>
@@ -141,25 +169,33 @@
         </section>
 
         <!--parceiros-->
-        <section class="sec5">
+        <section id="e" class="sec5">
             <div class="title" data-aos="fade-up">
                 <p>Nossos Parceiros</p>
                 <h2>Quem acredita em nossa solução</h2>
             </div>
             <div class="content" data-aos="fade-up">
                 <div class="content2">
-                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide1">
                     <input type="radio" name="slide" id="slide2">
-                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide3" checked>
+                    <input type="radio" name="slide" id="slide4">
+                    <input type="radio" name="slide" id="slide5">
 
                     <div class="slide s1">
-                        <img src="imgs/Group 12.png">
+                        <img src="imgs/slide/01.png">
                     </div>
                     <div class="slide">
-                        <img src="imgs/Group 12.png">
+                        <img src="imgs/slide/02.png">
                     </div>
                     <div class="slide">
-                        <img src="imgs/Group 12.png">
+                        <img src="imgs/slide/03.png">
+                    </div>
+                    <div class="slide">
+                        <img src="imgs/slide/04.png">
+                    </div>
+                    <div class="slide">
+                        <img src="imgs/slide/05.png">
                     </div>
                 </div>
 
@@ -167,12 +203,14 @@
                     <label class="barra" for="slide1"></label>
                     <label class="barra" for="slide2"></label>
                     <label class="barra" for="slide3"></label>
+                    <label class="barra" for="slide4"></label>
+                    <label class="barra" for="slide5"></label>
                 </div>
             </div>
         </section>
 
         <!--formulario-->
-        <section class="sec6">
+        <section id="f" class="sec6">
 
             <div class="content">
                 <form action="" method="post" data-aos="fade-up">
@@ -188,7 +226,7 @@
             <div class="content2" data-aos="fade-up">
                 <h3>Siga-nos nas redes</h3>
                 <div class="icones">
-                    <i class='bx bxl-linkedin'></i>
+                    <a href=""><i class='bx bxl-linkedin'></i></a>
                     <i class='bx bxl-facebook' ></i>
                     <i class='bx bxl-linkedin'></i>
                 </div>
@@ -197,7 +235,7 @@
         </section>
 
         <!--formulario 2-->
-        <section class="sec7">
+        <section id="g" class="sec7">
             <form action="" method="post" data-aos="fade-up">
                 <p>Vem Otimizar com a gente!</p>
                 <h2>Consultoria Gratuita</h2>
@@ -213,25 +251,23 @@
             </div>
         </section>
 
-        <footer>
-            <div class="finalizacao">
-                <p>CNPJ 45.765.221/0001-99</p>
-                <p>©Todos os direitos reservados.</p>
-            </div>
-        </footer>
     </aside>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init({
-        duration: 1200
-    });
-    </script>
+    <footer>
+        <div class="finalizacao">
+            <p>CNPJ 45.765.221/0001-99</p>
+            <p>©Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <script>
         var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1.8,
-          spaceBetween: 50,
+          slidesPerView: 1.6,
+          spaceBetween: 10,
           centeredSlides: true,
           pagination: {
             el: ".swiper-pagination",
@@ -239,5 +275,13 @@
           },
         });
       </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+    AOS.init({
+        duration: 1200
+    });
+    </script>
 </body>
 </html>

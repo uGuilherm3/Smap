@@ -17,6 +17,100 @@
     color: #312C4A;
     cursor: default;
 }
+body{
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    padding: 1% 0;
+    transform: translateX(-50%);
+    z-index: +10;
+    width: 100%;
+    background-color: #fff;
+    gap: 10%;
+}
+nav a{
+    text-decoration: none;
+    color: #312C4A;
+    cursor: pointer;
+}
+header img{
+    width: 80px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    font-size: 16px;
+}
+nav a{
+    position: relative;
+    white-space: nowrap;
+}
+nav a::after{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #37E5D4;
+    transition: 0.4s ease;
+}
+nav a:hover::after{
+    width: 100%;
+}
+.drop{
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    z-index: +10;
+    border-radius: 10px;
+    padding: 15px;
+    align-items: center;
+}
+.drop:hover img{
+    margin-bottom: 20px;
+}
+.drop:hover div{
+    width: 200px;
+    height: 400px;
+}
+.drop img{
+    width: 60px;
+}
+.drop div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+.drop div a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: 0.4s ease;
+}
+.drop div a:hover{
+    background-color: #312C4A;
+    color: #fff;
+}
 main{
     background-image: url(imgs/back.png);
     background-size: cover;
@@ -50,6 +144,9 @@ main p{
     font-weight: 100;
     font-size: 24px;
     color: #ffff;
+}
+#mob{
+    display: none;
 }
 main a{
     text-decoration: none;
@@ -114,8 +211,6 @@ main img{
 .etapamob{
     display: none;
 }
-
-
 /*beneficios*/
 .sec2{
     margin-top: 10%;
@@ -239,7 +334,7 @@ main img{
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 30vh;
+    height: 40vh;
     margin-bottom: 4%;
 }
 .navigation{
@@ -260,10 +355,10 @@ main img{
 }
 .sec5 .content2{
     display: flex;
-    gap: 50px;
-    height: 150px;
-    width: 1080px;
-    overflow: hidden;
+    gap: 90px;
+}
+.sec5 .content2 img{
+    width: 300px;
 }
 .slide{
     transition: 0.5s ease;
@@ -272,13 +367,19 @@ main img{
     display: none;
 }
 #slide1:checked ~ .s1{
-    margin-left: 10px;
+    margin-left: 1550px;
 }
 #slide2:checked ~ .s1{
-    margin-left: -1080px;
+    margin-left: 770px;
 }
 #slide3:checked ~ .s1{
-    margin-left: -2170px;
+    margin-left: 0;
+}
+#slide4:checked ~ .s1{
+    margin-left: -770px;
+}
+#slide5:checked ~ .s1{
+    margin-left: -1550px;
 }
 
 
@@ -384,6 +485,11 @@ form button:hover{
     border-radius: 100%;
     padding: 10px;
     margin: 15px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.icones i:hover{
+    box-shadow: 0 0 1px 7px #ffff;
 }
 .sec7{
     display: none;
@@ -402,6 +508,9 @@ form button:hover{
     h1{
         font-size: min(30px, 5vw) !important;
     }
+    header{
+        display: none;
+    }
     main .content{
         display: flex;
         align-items: center;
@@ -416,8 +525,14 @@ form button:hover{
     main a{
         font-size: min(15px,5vw);
     }
+    #mob{
+        display: block;
+    }
+    #pc{
+        display: none;
+    }
     main img{
-        bottom: -3.3%;
+        display: none;
     }
     .title h2{
         font-size: min(27px, 7vw);
@@ -433,7 +548,7 @@ form button:hover{
         font-size: min(15px, 3vw);
     }
     .etapamob{
-        display: block;
+        display: block !important;
     }
 
     /*beneficios*/
@@ -463,6 +578,10 @@ form button:hover{
     }
     .sec3 img{
         width: 30%;
+    }
+    .sec3 p{
+        font-size: 13px !important;
+        width: 110%;
     }
     /*quem somos*/
     .sec4 .content{
@@ -503,6 +622,17 @@ form button:hover{
         width: 100vw;
         overflow-x: hidden;
     }
+    header{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    header img{
+        margin: 0;
+    }
+    nav a{
+        white-space: nowrap;
+    }
     main p{
         width: 50%;
         font-size: min(20px, 3vw);
@@ -511,14 +641,22 @@ form button:hover{
         bottom: -4vh;
         height: 250px;
     }
-    .sec1 .etapas{
+    #pc{
         display: none;
+    }
+    #mob{
+        display: block;
+    }
+    .sec1 .etapas{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .sec1 .etapas p{
         font-size: min(15px, 3vw);
     }
     .etapamob{
-        display: block;
+        display: none;
     }
     .sec2 img{
         width: 45vw;
@@ -555,6 +693,6 @@ form button:hover{
     .sec7 .icones i{
         box-shadow:  20px 20px 60px #dfdfdf,
              -20px -20px 60px #ffffff;
-             padding: 15px;
+        padding: 15px;
     }
 }
